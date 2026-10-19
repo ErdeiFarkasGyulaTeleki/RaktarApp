@@ -10,7 +10,7 @@ try
 
     foreach (string line in lines)
     {
-        if (line == string.Empty || string.IsNullOrWhiteSpace(line))
+        if (string.IsNullOrWhiteSpace(line))
         {
             hibasSorokSzama++;
             continue;
@@ -32,7 +32,7 @@ try
         }
 
         string cikkszam = adatok[1];
-        if (cikkszam == string.Empty || string.IsNullOrWhiteSpace(cikkszam))
+        if (string.IsNullOrWhiteSpace(cikkszam))
         {
             hibasSorokSzama++;
             continue;
